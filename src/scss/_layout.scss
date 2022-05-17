@@ -23,7 +23,39 @@ header {
   // color: $bgNavy;
 }
 
-.container {}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  .container {
+    width: 100%;
+    height: 100%;
+
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+
+      &:nth-of-type(1) {
+        background-color: rgb(28,28,28);
+        color: green;
+      }
+
+      &:nth-of-type(2) {
+        background-color: rgb(38,38,38);
+        color: blue;
+      }
+
+      h1 {
+        font-family: Helvetica;
+        font-size: 5em;
+      }
+    }
+  }
+}
 
 #p1 {
   padding: $textPadding;
@@ -31,36 +63,19 @@ header {
   margin-right: 10px;
   text-align: center;
 }
-
-#pHead {
-  padding-bottom: 20px;
-}
-
-.iconHead {
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.material-icons-outlined {
-  padding: 20px;
-  font-size: 40px;
-  /* Preferred icon size */
-}
-
-span:hover {
-  color: $bgYellow;
-}
 //SMALLER WINDOW
 @media screen and (min-width: 641px) and (max-width: 900px) {
   .container {
+    h1 {
+      font-family: Helvetica;
+      font-size: 5em;
+      text-align: center;
+    }
   }
-
-
 }
 //SMALLEST WINDOWS
 @media screen and (max-width: 640px) {
-  .container {
-  }
+  .container {}
 
   #p1 {
     padding: $textPadding;
@@ -69,7 +84,13 @@ span:hover {
     text-align: center;
   }
 
+  h1 {
+    font-family: Helvetica;
+    font-size: 5em;
+    text-align: center;
+  }
 }
+
 //LARGER WINDOWS
 @media screen and (min-width: 901px) {
   #p1 {
