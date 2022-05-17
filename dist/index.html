@@ -29,8 +29,11 @@
   <div class="container">
 
     <section>
-      <div id="text"> CSS 3D Isometric Text
+      <div class="title_holder">
+        <div id="text" data-text="McClain Martensen">McClain Martensen</div>
+
       </div>
+
     </section>
 
     <section>
@@ -106,6 +109,14 @@
 
 
 
+    <script type="text/javascript">
+      var text = document.getElementById('text')
+      var shadow = '';
+      for (var i = 0; i < 30; i++) {
+        shadow += (shadow? ',' : '') + -i * 1 + 'px ' + i * 1 + 'px 0 #d9d9d9';
+      }
+      text.style.textShadow = shadow;
+    </script>
 
 
   <script src="js/vendor/modernizr-3.11.8.min.js"></script>
