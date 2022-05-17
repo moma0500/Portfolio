@@ -137,10 +137,11 @@ nav ul li {
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;
+
 }
 
 #pHead {
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .iconHead {
@@ -178,9 +179,9 @@ span:hover {
 
   #p1 {
     padding: $textPadding;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
   }
 
   .photoContainer {
@@ -201,7 +202,7 @@ span:hover {
     padding: $textPadding;
     margin-left: 10px;
     margin-right: 10px;
-    text-align: right;
+    text-align: center;
   }
 
   nav ul {
@@ -215,6 +216,12 @@ span:hover {
     margin: 5px;
   }
 }
-
 //LARGER WINDOWS
-@media screen and (min-width: 901px) {}
+@media screen and (min-width: 901px) {
+  #p1 {
+    padding: $textPadding;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+  }
+}
