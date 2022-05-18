@@ -96,21 +96,19 @@ body {
 }
 
 .about_me {
-  margin-right: 150px;
-  margin-left: 150px;
+  margin-right: 90px;
+  margin-left: 90px;
   text-align: center;
   // background: orange;
-  height: 85vh;
+  height: 96vh;
 }
 
-.square_profile_pic{
+.circle_profile_pic{
   height: 40vh;
 }
 
 #pHead{
   padding-bottom: 10px;
-  
-
 }
 
 #p1 {
@@ -127,9 +125,11 @@ body {
       font-size: 5em;
       text-align: center;
     }
-
   }
 
+  .circle_profile_pic{
+    height: 30vh;
+  }
 
   #text{
     position: relative;
@@ -169,20 +169,41 @@ body {
     background: #f1f1f1;
     overflow: hidden;
   }
-}
-//SMALLEST WINDOWS
-@media screen and (max-width: 640px) {
+
   .about_me {
     margin-right: 50px;
     margin-left: 50px;
     text-align: center;
+    // background: orange;
+    height: 96vh;
+    font-size: .85em;
+  }
+}
+//SMALLEST WINDOWS
+@media screen and (max-width: 640px) {
+  .about_me {
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align: center;
+    // background: orange;
+    height: 96vh;
+    font-size: .75em;
   }
 
-  #p1 {
-    padding: $textPadding;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
+  .circle_profile_pic{
+    height: 25vh;
+  }
+
+  // #p1 {
+  //   padding: $textPadding;
+  //   margin-left: 10px;
+  //   margin-right: 10px;
+  //   text-align: center;
+  //   font-size: .5em;
+  // }
+
+  p {
+    font-size: .8em;
   }
 
   h1 {
